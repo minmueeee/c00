@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmin <bmin@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/19 19:15:49 by bmin              #+#    #+#             */
-/*   Updated: 2022/04/20 18:11:04 by bmin             ###   ########.fr       */
+/*   Created: 2022/04/20 16:12:24 by bmin              #+#    #+#             */
+/*   Updated: 2022/04/20 18:10:52 by bmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<unistd.h>
 
-void	ft_print_reverse_alphabet(void)
+void	ft_print_numbers(void)
 {
 	int c;
 
-	c = 122;
-	while(c >= 97)
+	c = 48;
+	while( c <= 57 )
 	{
 		write(1, &c, 1);
-		c--;
+		c++;
 	}
 }
